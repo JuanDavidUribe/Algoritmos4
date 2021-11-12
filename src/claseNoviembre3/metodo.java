@@ -5,6 +5,8 @@ import java.util.Vector;
 
 import javax.swing.JOptionPane;
 
+
+
 import PadresHijos.Hijo;
 import PadresHijos.Padre;
 
@@ -41,7 +43,7 @@ public class metodo {
 		for (int i = 0; i < vectorPadre.capacity(); i++) {
 			vectorPadre.add(new Padre(
 					JOptionPane.showInputDialog("Ingrese el tipo de identificacion"),
-					JOptionPane.showInputDialog("Ingrese el numero de identificacion"),
+					ExpresionesRegulares.Metodo.validarIdRegEx(JOptionPane.showInputDialog("Ingrese el numero de identificacion")),
 					JOptionPane.showInputDialog("Ingrese los nombres"),
 					JOptionPane.showInputDialog("Ingrese los apellidos"),
 					JOptionPane.showInputDialog("Ingrese el celular"),
