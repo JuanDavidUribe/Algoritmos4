@@ -5,8 +5,6 @@ import java.util.Vector;
 
 import javax.swing.JOptionPane;
 
-
-
 import PadresHijos.Hijo;
 import PadresHijos.Padre;
 
